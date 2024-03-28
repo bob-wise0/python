@@ -1,11 +1,12 @@
 repo_name: bob-wise0/python
-report_id: 2baab51278283d9f0636526f3f96cf08
+report_id: e38648ce9e31578f59d177e43a32e9c3
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-08T21:05:23+00:00'
+timestamp: '2024-03-28T08:23:42+00:00'
 requested_by: ypypy28
 provider: github
 branch: main
-detected_tools_count: 10
+detected_tools_count: 12
 tools:
 - name: Jinja
   description: Full featured template engine for Python
@@ -16,7 +17,10 @@ tools:
   category: Languages & Frameworks
   sub_category: Templating Languages & Extensions
   image_url: https://img.stackshare.io/service/2303/New_Project__20_.png
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements-generator.txt
   detection_source: requirements-generator.txt
+  last_updated_by: BethanyG
+  last_updated_on: 2022-08-14 02:06:38.000000000 Z
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
     to Perl, Ruby, Scheme, or Java.
@@ -26,6 +30,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/bob-wise0/python
   detection_source: Repo Metadata
 - name: Shell
   description: A shell is a text-based terminal, used for manipulating programs and
@@ -36,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/bob-wise0/python
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -45,6 +51,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/bob-wise0/python
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -54,7 +61,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/test-runner.yml"
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/.github/workflows/ci-workflow.yml
+  detection_source: ".github/workflows/ci-workflow.yml"
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-06-08 23:06:13.000000000 Z
 - name: Istio
   description: Open platform to connect, manage, and secure microservices, by Google,
     IBM, and Lyft
@@ -65,7 +75,10 @@ tools:
   category: Build, Test, Deploy
   sub_category: Microservices Tools
   image_url: https://img.stackshare.io/service/7028/AGpa5VZV.jpg
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/.github/pr-commenter.yml
   detection_source: ".github/pr-commenter.yml"
+  last_updated_by: BethanyG
+  last_updated_on: 2021-10-29 23:26:57.000000000 Z
 - name: Pylint
   description: Source-code, bug and quality checker for the Python programming language
   website_url: https://www.pylint.org/
@@ -75,10 +88,48 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/4837/py.jpg
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements.txt
   detection_source: requirements.txt
+  last_updated_by: BethanyG
+  last_updated_on: 2022-08-14 02:06:38.000000000 Z
+- name: flake8
+  description: Tool for style guide enforcement
+  website_url: https://github.com/PyCQA/flake8
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/4838/default_c37162891c64eca7fafe782d9c191e409aae1e93.png
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements-generator.txt
+  detection_source: requirements-generator.txt
+  last_updated_by: Corey McCandless
+  last_updated_on: 2019-07-24 13:49:01.000000000 Z
+- name: Black
+  description: Python code formatter
+  website_url: https://github.com/ambv/black
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/10632/55281.jpeg
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements-generator.txt
+  detection_source: requirements-generator.txt
+  last_updated_by: BethanyG
+  last_updated_on: 2022-03-30 03:44:08.000000000 Z
+- name: MarkupSafe
+  description: Safely add untrusted strings to HTML/XML markup
+  package_url: https://pypi.org/project/MarkupSafe
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19945/default_0b0a94e1bdf3e64deeccb23892ca2335bdc30e4f.png
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements-generator.txt
+  detection_source: requirements-generator.txt
+  last_updated_by: BethanyG
+  last_updated_on: 2022-02-18 07:34:31.000000000 Z
 - name: black
   description: The uncompromising code formatter
-  package_url: https://pypi.org/black
+  package_url: https://pypi.org/project/black
   version: 22.3.0
   license: MIT
   open_source: true
@@ -86,23 +137,13 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20099/default_029b9bbfb6be2cd34bebeda5b8e1e80a1d22441c.png
-  detection_source_url: requirements-generator.txt
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements-generator.txt
   detection_source: requirements-generator.txt
-- name: flake8
-  description: 'The modular source code checker: pep8, pyflakes and co'
-  package_url: https://pypi.org/flake8
-  version: 3.7.8
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: PyPI Packages
-  image_url: https://img.stackshare.io/package/19920/default_c8be5290cb8d8a8b578535a2c6475d1057ff4ea4.png
-  detection_source_url: requirements-generator.txt
-  detection_source: requirements-generator.txt
+  last_updated_by: BethanyG
+  last_updated_on: 2022-03-30 03:44:08.000000000 Z
 - name: python-dateutil
   description: Extensions to the standard Python datetime module
-  package_url: https://pypi.org/python-dateutil
+  package_url: https://pypi.org/project/python-dateutil
   version: 2.8.1
   license: NRL
   open_source: true
@@ -110,5 +151,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19833/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
-  detection_source_url: requirements-generator.txt
+  detection_source_url: https://github.com/bob-wise0/python/blob/main/requirements-generator.txt
   detection_source: requirements-generator.txt
+  last_updated_by: Michael Morehouse
+  last_updated_on: 2019-11-20 19:57:18.000000000 Z
